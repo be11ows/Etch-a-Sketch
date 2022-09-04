@@ -1,12 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: darkgray;
     color: white;
-}
-
-html, body {
-    height: 100%;
 }
 
 body {
@@ -44,17 +40,23 @@ button {
 }
 
 .container {
+    position: relative;
+    outline: 1px solid black;
     --size: 4;
-    height: 800px;
-    width: 800px;
+    height: 960px;
+    width: 960px;
     display: grid;
     grid-template-columns: repeat(var(--size), 1fr);
     grid-template-rows: repeat(var(--size), 1fr);
-    gap: 3px;
-    padding: 3px;
+    padding: 0;
+    border: none;
 }
 
 .cell {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 1px solid black;
     background-color: grey;
     border-radius: 0px;
 }
